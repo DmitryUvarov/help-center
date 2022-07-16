@@ -1,0 +1,39 @@
+.breadcrumbs {
+    padding: 15px 0;
+    & ul {
+        display: flex;
+        align-items: center;
+    }
+    & li {
+        display: flex;
+        align-items: center;
+        & a {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12.7045px;
+            line-height: 15px;
+            color: #000000;
+        }
+        margin-right: 8px;
+
+        &:not(:first-child) {
+
+            & a {
+                color: #707070;
+            }
+
+            &::before {
+                content: '  >  ';
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12.7045px;
+                line-height: 15px;
+                color: #000000;
+                margin-right: 8px;
+
+            }
+        }
+    }
+}
