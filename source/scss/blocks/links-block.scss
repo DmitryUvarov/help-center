@@ -1,0 +1,42 @@
+.links-block {
+
+    padding: 65px 0;
+    &__container {
+    }
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+
+        @media (max-width: 991px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+    }
+    &__item {
+        background: linear-gradient(0deg, rgba(10, 18, 60, 0) 0%, #0A123C 100%), #2A46CD;
+        border: 0.710891px solid #1A66FF;
+        border-radius: 6.39802px;
+        padding: 40px 15px;
+        text-align: center;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 122%;
+        color: #FFFFFF;
+
+
+        @media (max-width: 991px) {
+            padding: 30px 15px;
+        }
+
+        @media (max-width: 768зч) {
+            padding: 20px 15px;
+        }
+    }
+
+}

@@ -16,7 +16,7 @@ body {
 
 
 .container {
-  max-width: 1470px;
+  max-width: $maxWidthContainer + px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
