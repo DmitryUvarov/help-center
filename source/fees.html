@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('_header.html', {
+        "nav": true
+        })
+
+
+
+        <main>
+
+            <section class="help">
+                <div class="help__container container">
+                    <aside class="aside">
+                        <div class="aside__title">Articles in this section</div>
+                        <div class="aside__links">
+                            <a href="about-us.html" class="aside__link">About us</a>
+                            <a href="fees.html" class="aside__link active">Fees</a>
+                            <a href="general-questions.html" class="aside__link">General Questions</a>
+                            <a href="#" class="aside__link">Referral Program</a>
+                        </div>
+                    </aside>
+
+                    <div class="help__body">
+                        <h2>About us</h2>
+
+                        <img src="img/fees.png" width="765" height="400" alt="">
+
+                        <p>Today we’ll talk about commissions.</p>
+                        <p>Every time a customer makes a transaction (buying/selling cryptocurrency). They are charged a
+                            commission depending on the turnover for the month. Its diversification depends on the type
+                            of order placement on the exchange:</p>
+
+                        <ul>
+                            <li><strong>MAKER: </strong>commission for setting a new buy/sell offer to the offer table;</li>
+                            <li><strong>TAKER: </strong> comission for fulfilling an existing offer from another user.</li>
+                        </ul>
+
+                        <p>Maker and Taker fees on Monowork.com are the same: 0.20% for regular users and 0.14% for
+                            Premium users.</p>
+                        <p>There is a Commission for withdrawal, as well as a minimum amount of withdrawal of tokens/coins.
+                            The maximum amount cannot exceed the amount that is available on your account.
+                        </p>
+                        <p>This data may change without notifying users, so pay attention to the automatic calculation of the
+                            Commission when withdrawing. Also, for the safety of your funds, we strongly recommend that you
+                            pass KYC verification, which will allow us to better protect you from adverse situations.</p>
+                        <p>Read more about protecting your account, funds, and personal data in our Anti-Fraud Guide.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    @@include('_js.html')
+</body>
+
+</html>

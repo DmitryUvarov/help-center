@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('_header.html', {
+        "nav": true
+        })
+
+
+
+        <main>
+
+            <section class="help">
+                <div class="help__container container">
+                    <aside class="aside">
+                        <div class="aside__title">Articles in this section</div>
+                        <div class="aside__links">
+                            <a href="about-us.html" class="aside__link">About us</a>
+                            <a href="fees.html" class="aside__link">Fees</a>
+                            <a href="general-questions.html" class="aside__link active">General Questions</a>
+                            <a href="#" class="aside__link">Referral Program</a>
+                        </div>
+                    </aside>
+
+                    <div class="help__body">
+                        <h2>General Questions</h2>
+                        <h3>What is cryptocurrency?</h3>
+                        <p>Сryptocurrency is a digital currency that uses cryptography for security, feature, that makes it difficult
+                            to counterfeit. It is not issued by any central authority, rendering it theoretically immune to government
+                            interference or manipulation.</p>
+
+                        <h3>How do I register?</h3>
+                        <p>Registering is as simple as 1, 2, 3. Go to main page and register with your email address to get started.
+                            For registration, you will need a username and a password.</p>
+
+                        <h3>How do I get verified?</h3>
+                        <p>For certain kinds of Exchange Cryptocurrency Platform payments profile transactions, we might need
+                            to verify your identity using information protecting your wallet. Verifying your identity helps prevent
+                            fraud and ensures that no one, except you, is able to use your payment information to make changes.
+                            You can make the first withdrawal of your funds to the wallet, which is registered and verified with
+                            your account. Click to Deposit at the left tab, select the minimum amount BTC that will be added to
+                            your account balance.</p>
+
+                        <h3>What is ID verification for?</h3>
+                        <p>ID verification is needed to increase the security and reliability of the account. In case of loss of access
+                            to the mail to which the account is linked, you can always restore access with your Passport, driving
+                            license and other legal ID. In addition, verification allows you to increase daily withdrawal limits.</p>
+
+                        <h3>What is 2Factor Authentication (or 2FA)?</h3>
+                        <p>We allow you to enable 2FA on your account by checking 2FA box in Personal Area – Settings. When
+                            making a deposit or withdrawal, you will receive a link to the confirmation of the operation by email.
+                            The confirmation link has a limited validity period. This greatly increases the security of your account
+                            because if your device is hacked into, or your password is compromised, the hacker will still not be
+                            able withdraw or transfer funds because they need access email, too. You may turn the verification
+                            off anytime you want.</p>
+
+
+                        <h3>I lost my 2Factor Device.</h3>
+                        <p>Please contact Support and we will ask you questions to verify your account ownership.</p>
+
+
+                        <h3>I have other questions.</h3>
+                        <p>If you have other questions that are not answered here please feel free to contact support manager.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    @@include('_js.html')
+</body>
+
+</html>
