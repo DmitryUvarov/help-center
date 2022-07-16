@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('_header.html', {
+        "nav": true
+        })
+
+
+
+        <main>
+
+            <section class="help">
+                <div class="help__container container">
+                    <aside class="aside">
+                        <div class="aside__title">Articles in this section</div>
+                        <div class="aside__links">
+                            <a href="" class="aside__link active">How to Withdraw Coins</a>
+                            <a href="" class="aside__link">Invalid Google 2FA Code</a>
+                            <a href="" class="aside__link">USDT Based on Different Chain</a>
+                            <a href="" class="aside__link">Withdrawal Did Not Go Through</a>
+                        </div>
+                    </aside>
+
+                    <div class="help__body">
+                        <h2>How to Withdraw Coins?</h2>
+
+
+                        <p><strong>1. Go to Monowork and click the&nbsp;<span class="wysiwyg-color-cyan120">Personal Area</span>&nbsp;icon at
+                                the upper right corner of the top bar.</strong></p>
+                        <p><strong>2. Click&nbsp;<span class="wysiwyg-color-cyan120">Withdraw</span>, and select a coin.
+                                Then fill in the wallet address and choose the corresponding network. Input the amount and then click confirm to proceed.</strong></p>
+                        <p><strong>3. Security verification window will pop up, fill 2FA code one by one to submit the withdrawal request.
+                                <h3 id="h_01G1CSM9537YB6QAP1WZFPG1F8"><strong>3. FAQs</strong></h3>
+                                <p><strong>1. How long does withdrawal take to process?</strong><br>It takes a few minutes to a few hours, varying from coin to coin.&nbsp;</p>
+                                <p><strong>2. Why does it take very long to receive my withdrawal?</strong><br>Usually, we will process your withdrawal within 30 minutes, but delays may happen for many reasons like network congestion. Also, to enhance the security of your assets, if your withdrawal amount is larger than a certain amount, we will manually process your request and it may take a bit longer. You can contact our online support for further checks.</p>
+                                <p><strong>3. What is the fee for crypto withdrawal?</strong><br>Monowork charges a small amount of fee, and it depends on the coin as well as the blockchain network. For instance, usually, the transaction fee of TRC20 tokens is lower than their ERC20 counterparts. Check the withdraw page for more info.</p>
+                                <p>If you are withdrawing the funds to another Monowork account, you can tick<strong> Internal transfer</strong> on the withdrawal page, then the transaction will be almost instant with 0 fees.&nbsp;</p>
+                                <p><strong>4. What is the minimal amount to withdraw?</strong><br>It varies from coin to coin. Check the withdraw page for more info.</p>
+                                <p><strong>5. What if I withdraw a token to the wrong address?</strong><br>Monowork may not be able to recover the funds if it has left the platform. Kindly contact the receiving platform for further assistance.</p>
+                                <p><strong>6. I have funds in my account but why does it say the balance is insufficient?</strong><br>Please make sure the funds are in your <strong>Main Account</strong> when making a withdrawal.</p>
+                                <p><strong>7. Why does it say Contain invalid or sensitive information when withdrawing?</strong><br>Very likely the address entered is incorrect. Please double-check the crypto address or contact online support for further check.</p>
+                                <p>For some tokens, we only support transferring via a specific mainnet chain instead of an ERC20 or BEP20 chain, such as DOCK, XMR, etc. Please do not transfer tokens via unsupported chains or addresses.</p>
+                                <p><strong>8. Why the withdrawal service for some tokens is not available?</strong><br>Some wallets may be under maintenance from time to time. We will keep everyone informed via our official announcements. Appreciate your patience.</p>
+                                <p><strong>9. Why my withdrawal service has been suspended?</strong></p>
+                                <p>To enhance the security of your account and assets, your withdrawal function will be temporarily suspended for 24 hours after changing some important security settings such as trading password, Google 2FA, and more.&nbsp;</p>
+                                <p><strong>We hope this article has been helpful. If you have any other questions, please reach out to our 24/7 customer support via <a href="/support">online chat</a> or <a href="/help/request">submit a ticket</a>.</strong></p>
+                                <p><strong>Happy trading on Monowork!</strong></p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    @@include('_js.html')
+</body>
+
+</html>

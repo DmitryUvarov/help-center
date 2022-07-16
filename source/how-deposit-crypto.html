@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('_header.html', {
+        "nav": true
+        })
+
+
+
+        <main>
+
+            <section class="help">
+                <div class="help__container container">
+                    <aside class="aside">
+                        <div class="aside__title">Articles in this section</div>
+                        <div class="aside__links">
+                            <a href="" class="aside__link">Deposit Did Not Arrive</a>
+                            <a href="" class="aside__link">Deposit Unsupported Tokens</a>
+                            <a href="" class="aside__link">Deposit Wrong Crypto</a>
+                            <a href="" class="aside__link active">How to Deposit Crypto</a>
+
+                        </div>
+                    </aside>
+
+                    <div class="help__body">
+                        <h2>How to Deposit Crypto to Exchange?</h2>
+
+                        <p><strong>To start trading Bitcoin and 600+ other coins on Monowork, the first step is to deposit crypto to the platform. While it is easy to make a deposit on Monowork, there are a few common mistakes to avoid to ensure the deposit reaches your account in a fast and secure manner.&nbsp;</strong></p>
+                        <h3 id="h_01G0VQJ0GADRCMD8JREG0TAAVE"><strong>1. How to Deposit Crypto on the Monowork Website?</strong></h3>
+                        <p><strong>1. Go to Monowork, and click the <span class="wysiwyg-color-cyan120">Personal Area</span> icon at the upper
+                                right corner of header.</strong></p>
+                        <p><strong>2. Click <span class="wysiwyg-color-cyan120">Deposit</span>, select the coin, then the network.</strong></p>
+                        <p><strong>3. Copy your deposit address and paste it into the withdrawal platform, then deposit the coins to the relevant Monowork account.</strong></p>
+                        <p><strong>Tips:</strong></p>
+                        <ul>
+                            <li>If you are depositing a coin for the first time, you must activate the deposit address first.</li>
+                            <li>Bitcoin address will not accept deposits in ETH. Deposits of coins that do not match the address may not be recoverable. The same goes for most other coins.</li>
+                            <li>Certain coins (such as USDT and ETH) support multiple blockchain networks on Monowork. Ensure the network selected matches the network of the address entered.</li>
+                            <li>
+                                If the coin you want to deposit requires a Memo, Tag, Payment ID, or Message, ensure that it is entered correctly.
+                                Otherwise, the coins won't arrive in your account.
+                            </li>
+                            <li>
+                                Each ERC20 coin has a unique contract ID that can be checked from <a href="https://etherscan.io/" target="_self">Etherscan</a>.
+                                Ensure that the contract ID of the coin you wish to deposit is the same as the one listed on Monowork.
+                            </li>
+                        </ul>
+                        <h3 id="h_01G0VRMVY8EBPF818BVTS2QXJG"><strong>3. FAQ</strong></h3>
+                        <p><strong>1. How long does a deposit take to process?</strong></p>
+                        <p>Deposits can take a few minutes to a few hours, depending on the coin. If the coin has not arrived in your account after a long time, contact customer support and provide info such as your Monowork UID, the coin deposited, and the TXID.</p>
+                        <p><strong>2. What are the fees for crypto deposits?</strong></p>
+                        <p>The commission depends on a number of factors, check in support for more details.</p>
+                        <p><strong>3. What if I deposit a coin that Monowork does not support?</strong></p>
+                        <p>Monowork may not be able to recover any unsupported assets. Please contact customer support and provide info such as your Monowork UID, the coin deposited, and the TXID.</p>
+                        <p><strong>4. What if I deposit a token to the wrong address?</strong></p>
+                        <p>Monowork may not be able to recover the assets for such a mistake. Please contact our support and provide info like your Monowork UID, the coin deposited, and the TXID.</p>
+                        <p><strong>5. What if I forgot the Memo, Tag, or Message when making the deposit?</strong></p>
+                        <p>Monowork may not be able to recover the assets for such a mistake. Please contact our support and provide info like your Monowork UID, the coin deposited, and the TXID.</p>
+                        <p><strong>We hope this article has been helpful. If you have any other questions, please reach out to our 24/7 customer support via <a href="/support">online chat</a> or <a href="/help/request">submit a ticket</a>.</strong></p>
+                        <p><strong>Happy trading on Monowork!</strong></p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    @@include('_js.html')
+</body>
+
+</html>

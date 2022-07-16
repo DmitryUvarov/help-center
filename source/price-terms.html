@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('_header.html', {
+        "nav": true
+        })
+
+
+
+        <main>
+
+            <section class="help">
+                <div class="help__container container">
+                    <aside class="aside">
+                        <div class="aside__title">Articles in this section</div>
+                        <div class="aside__links">
+                            <a href="" class="aside__link">Arbitrage</a>
+                            <a href="" class="aside__link">Cryptocurrency Overview</a>
+                            <a href="" class="aside__link">Day Trading</a>
+                            <a href="" class="aside__link">Portfolio</a>
+                            <a href="" class="aside__link active">Price Terms</a>
+                            <a href="" class="aside__link">Pump&Dump</a>
+                            <a href="" class="aside__link">Spot or Margin</a>
+                            <a href="" class="aside__link">Technical Analysis</a>
+                        </div>
+                    </aside>
+
+                    <div class="help__body">
+                        <h2>Price Terms</h2>
+
+                        <p>
+                            It is very easy to confuse the Last Traded Price with the Market Price for a new user who does not have enough experience in trading. Bitniex has created a dictionary of price terminology that will help novice traders understand.
+                        </p>
+                        <p>
+                            <b>Limit price</b>: your desired limit order price or best price. Price dependence on the operation performed. A limit order:
+                        </p>
+                        <ul>
+                            <li><b>buy</b> - executed only at the limit price or <u>lower</u>;</li>
+                            <li><b>sell</b> - executed only at the limit price or <u>higher</u>.</li>
+                        </ul>
+                        <p>
+                            <b>Market Price (Taker Price)</b>: this is the current price at which an asset or service can be purchased or sold. The market price is the best offer in the order book, which differs for buyers and sellers because the best offer for buyers is the lowest sales order in the book, and the best offer for sellers is the highest purchase offer in the book.
+                        </p>
+                        <p>
+                            Hint for selecting the appropriate order type:
+                        </p>
+                        <p>
+                            <b>Best Average Market Price</b> is the average price of the best current asks or bids that can fill an order. It will be filled by several opposing orders on the book. A market buy order: several of the lowest asks on the book, a market sell order: several of the highest bids on the book. The average price for filling a market order is the best average price.
+                        </p>
+                        <p>
+                            <b>Last Traded Price</b>: price for executing the last order in the market. For example, if the last XBTUSD trade was at 10127, then 10127 will be The Last Traded Price. This is a purely historical price, and the market order will not be executed on it.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    @@include('_js.html')
+</body>
+
+</html>

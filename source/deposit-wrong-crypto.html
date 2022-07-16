@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('_header.html', {
+        "nav": true
+        })
+
+
+
+        <main>
+
+            <section class="help">
+                <div class="help__container container">
+                    <aside class="aside">
+                        <div class="aside__title">Articles in this section</div>
+                        <div class="aside__links">
+                            <a href="" class="aside__link">Deposit Did Not Arrive</a>
+                            <a href="" class="aside__link">Deposit Unsupported Tokens</a>
+                            <a href="" class="aside__link active">Deposit Wrong Crypto</a>
+                            <a href="" class="aside__link">How to Deposit Crypto</a>
+
+                        </div>
+                    </aside>
+
+                    <div class="help__body">
+                        <h2>What Should I Do If Deposit Wrong Crypto?</h2>
+
+                        <p><strong>A crypto address is a string of characters that can be used to send and receive crypto. While each coin typically has its own unique address, coins on the same blockchain may have the same. For instance, all ERC20 tokens on Monowork have the same address. Note that depositing coins to a non-matching address may result in the loss of your funds.</strong></p>
+                        <p><strong>This article shows the common mistakes of depositing the wrong crypto, and what to do to recover your funds in the event of such a mistake.</strong></p>
+                        <h3 id="h_01G0VW6EKQEHPPGR0EJN02N536"><strong>1. Common Mistakes of Depositing Wrong Crypto</strong></h3>
+                        <p><strong>1. Depositing coins that have not been listed on Monowork</strong></p>
+                        <p>Though Monowork supports Bitcoin and over 100+ altcoins, there are still many coins that have not been listed yet. Coins that have not been listed yet will not be displayed on Monowork when deposited.</p>
+                        <p><strong>2. Depositing coin A to the address of coin B</strong></p>
+                        <p>Unless both coins are issued on the same blockchain, it is very likely that the deposit will fail to go through. For instance, a Bitcoin address will not accept deposits in ETH. The same goes for most other coins.</p>
+                        <p><strong>3. Depositing a coin to the wrong network</strong></p>
+                        <p>Certain coins (such as USDT and ETH) support multiple blockchain networks on Monowork. Ensure the network selected matches the network of the address entered.</p>
+                        <p>For instance, only the mainnet of EWT is supported on Monowork, meaning that ERC20 deposits will fail to go through.</p>
+                        <p><strong>4. Depositing coins with a different contract address</strong></p>
+                        <p>Blockchain projects may upgrade the contract address of their token for certain reasons. Monowork will publish an
+                            official announcement if we support the upgrade. Once the upgrade has been completed, deposits to the old contract address will not be credited to your Monowork account.</p>
+                        <p><strong>5. Deposit coins to the contract address</strong></p>
+                        <p>Note that the contract address is not used for deposit and withdrawal. Transfers to the contract address will not be recoverable. You can always find the deposit address from the Monowork deposit page.</p>
+                        <h3 id="h_01G0VW6MM6C8W34CDPAQ9X684N"><strong>2. What To Do When Depositing the Wrong Crypto</strong></h3>
+                        <p><strong>1. Collect the following information.</strong></p>
+                        <ul>
+                            <li>Your Monowork UID and registered email address.</li>
+                            <li>The name and the amount of the coins you deposited.</li>
+                            <li>The TXID of the transaction.</li>
+                            <li>The screenshot of the transfer record from the withdrawal platform.
+                                <ul>
+                                    <li>Ensure that the TXID, coin type, amount, and address are shown on the screenshot.</li>
+                                    <li>If you deposited from a private wallet such as MEW, provide a screenshot of your account address.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p><strong>2. <a href="/help/request" target="_blank" rel="noopener noreferrer">Submit a request</a> to the Monowork Support team and provide the information collected. Please be patient as we will reply to you by email once there is an update.</strong></p>
+                        <p><strong>In order to solve the issue as soon as possible, please avoid repetitive submissions for the same issue. Thank you for your understanding.</strong></p>
+                        <p><strong>We hope this article has been helpful. If you have any other questions, please reach out to our 24/7 customer support via <a href="/support">online chat</a> or <a href="/help/request">submit a ticket</a>.</strong></p>
+                        <p><strong>Happy trading on Monowork!</strong></p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    @@include('_js.html')
+</body>
+
+</html>

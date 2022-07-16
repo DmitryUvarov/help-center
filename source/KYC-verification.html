@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('_header.html', {
+        "nav": true
+        })
+
+
+
+        <main>
+
+            <section class="help">
+                <div class="help__container container">
+                    <aside class="aside">
+                        <div class="aside__title">Articles in this section</div>
+                        <div class="aside__links">
+                            <a href="" class="aside__link">Email Issues</a>
+                            <a href="" class="aside__link">Google Authenticator</a>
+                            <a href="" class="aside__link active">KYC verification</a>
+                        </div>
+                    </aside>
+
+                    <div class="help__body">
+                        <h2>KYC verification</h2>
+
+
+                        <p>KYC verification</p>
+                        <h3>KYC - Know Yout Customer. </h3>
+                        <p>The KYC process includes submitting and verifying documents that serve as your identity proofs.
+                            They mention your date of birth, address, and other essential details. KYC is a fundamental practice to protect an organization from fraud and losses resulting from illegal funds and transactions.
+                        </p>
+                        <h3>Important information:</h3>
+                        <p>To avoid conditions such as forgetting access credentials to exchange and accounts being taken over by others
+                            (information leakage from client side), we strongly suggest you to complete the KYC verification.
+                            Through the KYC information, we could help recover your account more quickly;
+                            Currently the same account only supports one authentication status, can not both be certified at the same time.</p>
+                        <h3>How to pass KYC(Identity Verification)</h3>
+                        <p>Go to the home page, click on the "Sign up" button and complete the registration procedure.
+                            Confirm your email, click on the tab "Settings" and follow the link "Click here to verify your ID"
+                            Fill out the data for the verification, you will get the status "Under review". Verification of documents takes up to 24 hours.
+                            After checking the documents you will see the message "Your ID information has been verified".
+                            After passing the verification, you will receive increased withdrawal limits and a deposit bonus.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    @@include('_js.html')
+
+</body>
+
+</html>

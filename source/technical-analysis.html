@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('_header.html', {
+        "nav": true
+        })
+
+
+
+        <main>
+
+            <section class="help">
+                <div class="help__container container">
+                    <aside class="aside">
+                        <div class="aside__title">Articles in this section</div>
+                        <div class="aside__links">
+                            <a href="" class="aside__link">Arbitrage</a>
+                            <a href="" class="aside__link">Cryptocurrency Overview</a>
+                            <a href="" class="aside__link">Day Trading</a>
+                            <a href="" class="aside__link">Portfolio</a>
+                            <a href="" class="aside__link">Price Terms</a>
+                            <a href="" class="aside__link">Pump&Dump</a>
+                            <a href="" class="aside__link">Spot or Margin</a>
+                            <a href="" class="aside__link active">Technical Analysis</a>
+                        </div>
+                    </aside>
+
+                    <div class="help__body">
+                        <h2>Technical Analysis: how and why?</h2>
+
+                        <p>
+                            If you want to get into crypto trading, you better learn at least the basics of technical analysis. While looking at charts, drawing lines, and identifying key price levels may seem silly at first glance, it is actually one of the best weapons you can have at your disposal, and it is definitely better than having nothing.
+                        </p>
+                        <p>
+                            True, key levels and prices largely follow established methods of technical analysis, but crypto trading is a rebellious Wild West: volatility, markets move quickly, and they are more prone to price manipulation. Hence, the knowledge base that you might bring from other markets must be adapted to the cryptocurrency through your own experiences, lessons, drastic and decisive actions, and appropriate risk management techniques.
+                        </p>
+                        <p>
+                            <b><u>While it may sound daunting, cryptocurrency combined with adequate TA techniques can lead to many profitable opportunities.</u></b>
+                        </p>
+                        <p>
+                            If you are quick-witted and vigilant about your trades and strategies, you are likely to have a fun and profitable pastime.
+                        </p>
+                        <p>
+                            Tools you can use to help you make decisions:
+                        </p>
+                        <ul>
+                            <li><b>Tradingview</b> (charts and technical analysis)</li>
+                            <li><b>Predicoin</b> (service for analyzing market sentiment)</li>
+                            <li><b>Coinpaprika</b> (coin index)</li>
+                            <li><b>Coinmarketcal</b> (crypto events calendar)</li>
+                            <li><b>Delta</b> (portfolio tracking app)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    @@include('_js.html')
+</body>
+
+</html>

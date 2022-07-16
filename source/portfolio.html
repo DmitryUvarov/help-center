@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('_header.html', {
+        "nav": true
+        })
+
+
+
+        <main>
+
+            <section class="help">
+                <div class="help__container container">
+                    <aside class="aside">
+                        <div class="aside__title">Articles in this section</div>
+                        <div class="aside__links">
+                            <a href="" class="aside__link">Arbitrage</a>
+                            <a href="" class="aside__link">Cryptocurrency Overview</a>
+                            <a href="" class="aside__link">Day Trading</a>
+                            <a href="" class="aside__link active">Portfolio</a>
+                            <a href="" class="aside__link">Price Terms</a>
+                            <a href="" class="aside__link">Pump&Dump</a>
+                            <a href="" class="aside__link">Spot or Margin</a>
+                            <a href="" class="aside__link">Technical Analysis</a>
+                        </div>
+                    </aside>
+
+                    <div class="help__body">
+                        <h2>Creation of a crypto portfolio</h2>
+
+                        <p>This sophisticated cryptocurrency trading strategy is based on assessing the state of the cryptocurrency market.
+                            To use it effectively, it is necessary not only to monitor the situation on the cryptocurrency market, but also to take into account many fundamental factors. Moreover, it is desirable for an investor to follow the macroeconomic situation in the world.
+                        </p>
+                        <p>How it works? A trader forms a portfolio of several promising and undervalued, in his opinion, coins. The ideal situation
+                            would be to create a balanced portfolio of cryptocurrencies, the value of which will not fall and skyrocket. In this case,
+                            a beta-neutral portfolio with respect to bitcoin, where half of the coins directly correlates with BTC and grows with its
+                            strengthening, and the other half, on the contrary, grows when the price of "digital gold" falls, may become optimal in this case.</p>
+                        <p>Correct rebalancing of such a portfolio will generate income regardless of the general trend in the market. Keep in mind,
+                            however, that assets can correlate differently with Bitcoin at different time periods.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    @@include('_js.html')
+</body>
+
+</html>

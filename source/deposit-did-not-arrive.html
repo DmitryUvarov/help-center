@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('_header.html', {
+        "nav": true
+        })
+
+
+
+        <main>
+
+            <section class="help">
+                <div class="help__container container">
+                    <aside class="aside">
+                        <div class="aside__title">Articles in this section</div>
+                        <div class="aside__links">
+                            <a href="" class="aside__link active">Deposit Did Not Arrive</a>
+                            <a href="" class="aside__link">Deposit Unsupported Tokens</a>
+                            <a href="" class="aside__link">Deposit Wrong Crypto</a>
+                            <a href="" class="aside__link">How to Deposit Crypto</a>
+
+                        </div>
+                    </aside>
+
+                    <div class="help__body">
+                        <h2>Deposit Did Not Arrive or Deposited to the Wrong Address</h2>
+
+                        <p><strong>Made a deposit to Monowork but it hasn’t arrived? Don’t worry. As long as the address was filled correctly and you remembered to use the required Memo or Tag, your funds will be processed.</strong></p>
+                        <p><strong>There can be many reasons that crypto deposits can be delayed. This article explains the common reasons and provides corresponding solutions.</strong></p>
+                        <h3><strong>1. There is no TXID</strong></h3>
+                        <p>If you cannot find the transaction ID (TXID) of the deposit on the blockchain, this may indicate that the transfer was unsuccessful. It is recommended to contact the withdrawal platform to check the status of your withdrawal.</p>
+                        <h3><strong>2. The number of confirmations is insufficient</strong></h3>
+                        <p>Transactions on the blockchain must be confirmed by the nodes to be successful. The number of confirmations varies depending on the coin and network.</p>
+                        <p>You can check the amount of confirmations required on the Monowork deposit page. Please be patient and wait until the confirmation reaches the required amount.</p>
+                        <h3><strong>3. There have been sufficient confirmations but funds haven’t arrived</strong></h3>
+                        <p>Once there are enough confirmations on the blockchain, the Monowork system will start proceeding your deposit. This can take up to 2-3 hours.</p>
+                        <p>To check the number of confirmations for your deposit, refer to the blockchain explorers below:</p>
+                        <ul>
+                            <li>BTC blockchain: <a href="https://blockchain.info/">http://blockchain.info/</a>
+                            </li>
+                            <li>ETH blockchain: <a href="https://etherscan.io/">https://etherscan.io/</a>
+                            </li>
+                            <li>MATIC blockchain: <a href="https://polygonscan.com/" target="_self">https://polygonscan.com/</a>
+                            </li>
+                            <li>BSC blockchain: <a href="https://bscscan.com/" target="_self">https://bscscan.com/</a>
+                            </li>
+                            <li>FTM blockchain: <a href="https://ftmscan.com/" target="_self">https://ftmscan.com/</a>
+                            </li>
+                            <li>TRX blockchain: <a href="https://tronscan.org/#/" target="_blank" rel="noopener noreferrer">https://tronscan.org/#/</a>
+                            </li>
+                            <li>HECO blockchain: <a href="https://hecoinfo.com/" target="_blank" rel="noopener noreferrer">https://hecoinfo.com/</a>
+                            </li>
+                        </ul>
+                        <h3 class="MachineTrans-lang-en wysiwyg-text-align-justify"><strong>4. Deposits to an old deposit address</strong></h3>
+                        <p>The deposit address of some coins on Monowork may be updated from time to time. Deposits using the old
+                            Monowork deposit address will be delayed by 12 hours. As such, it is recommended to always deposit to the
+                            new Monowork deposit address.</p>
+                        <h3><strong>5. Deposit service has been temporarily suspended</strong></h3>
+                        <p>Monowork may conduct wallet maintenance for certain coins from time to time, resulting in a delay to transactions.
+                            Refer to the deposit page to check out the latest service status.</p>
+                        <h3><strong>6. Deposit to the wrong address or deposit of the wrong coin</strong></h3>
+                        <p>Such transactions will not be credited to your Monowork account. Please contact our online support for further assistance.</p>
+                        <p><strong>We hope this article has been helpful. If you have any other questions, please reach out to our 24/7 customer support via <a href="/support">online chat</a> or <a href="/help/request">submit a ticket</a>.</strong></p>
+                        <p><strong>Happy trading on Monowork!</strong></p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    @@include('_js.html')
+</body>
+
+</html>

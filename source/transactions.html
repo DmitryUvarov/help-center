@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('_header.html', {
+        "nav": true
+        })
+
+
+
+        <main>
+
+            <section class="help">
+                <div class="help__container container">
+                    <aside class="aside">
+                        <div class="aside__title">Articles in this section</div>
+                        <div class="aside__links">
+                            <a href="" class="aside__link active">Transactions</a>
+
+                        </div>
+                    </aside>
+
+                    <div class="help__body">
+                        <h2>Transactions</h2>
+
+                        <h3>What’s a wallet address?</h2>
+                            <p>A wallet is a digital place where you can store cryptocurrency coins. A wallet address is a randomly generated combination of
+                                digits and letters that is associated with a particular wallet.
+                                Just figure out what coin has it’s unique wallet address. Go to Personal area – Transfer and look for a compatible wallet for Bitcoin,
+                                Bitcoincash, Ethereum. As a rule, each coin has its official wallet client. </p>
+                            <h3>Can I use transfer to send cryptocurrency coins outside this exchange platform?</h2>
+                                <p>Yes, but in this case, crediting of funds may take longer.
+                                    If you wish to send cryptocurrency coins outside the platform, please, use Personal Area – Withdraw </p>
+                                <h3>What's the recipient’s address?</h2>
+                                    <p>In any transaction there is always a sender and a recipient. The recipient’s address is the wallet address
+                                        where you will send the currency. For example, if you want to send Ether (ETH), you should specify an
+                                        ETH wallet address in the recipient field, and Exchange Crypto Platform will send coins to this address
+                                        once the transaction is complete. </p>
+                                    <h3>What is the maximal/minimal amount?</h2>
+                                        <p>There is no maximum amount. You can see the minimum amount when you try to withdraw funds or transfer. </p>
+                                        <h3> How do I cancel my transaction?</h2>
+                                            <p> Unfortunately, blockchain transactions are irreversible. Once a transaction is made (money is sent to
+                                                a particular wallet address), it cannot be rolled back. So, if you are going to exchange cryptocurrency,
+                                                be sure to double check all payment details carefully before sending. </p>
+                                            <h3> Why is my wallet address recognized as invalid?</h2>
+                                                <p> If your wallet address is recognized as invalid, it is usually for one of the following reasons:
+                                                <ul style="margin-top: 10px;margin-left: 0;padding-left: 20px;">
+                                                    <li> Make sure your wallet address matches the chosen cryptocurrency.</li>
+                                                    <li> You are trying to make transfer to address outside the Exchange Crypto Platform.</li>
+                                                    <li>There was a typo or character missing in the address you provided. Make sure that the address you specify matches the actual address of your wallet.</li>
+                                                </ul>
+                                                </p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    @@include('_js.html')
+</body>
+
+</html>

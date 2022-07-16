@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('_header.html', {
+        "nav": true
+        })
+
+
+
+        <main>
+
+            <section class="help">
+                <div class="help__container container">
+                    <aside class="aside">
+                        <div class="aside__title">Articles in this section</div>
+                        <div class="aside__links">
+                            <a href="" class="aside__link">Arbitrage</a>
+                            <a href="" class="aside__link">Cryptocurrency Overview</a>
+                            <a href="" class="aside__link">Day Trading</a>
+                            <a href="" class="aside__link">Portfolio</a>
+                            <a href="" class="aside__link">Price Terms</a>
+                            <a href="" class="aside__link active">Pump&Dump</a>
+                            <a href="" class="aside__link">Spot or Margin</a>
+                            <a href="" class="aside__link">Technical Analysis</a>
+                        </div>
+                    </aside>
+
+                    <div class="help__body">
+                        <h2>Price Terms</h2>
+
+                        <p>
+                            Having chosen an exchange and a coin, the organizers buy tokens in small portions so as not to provoke a premature rise in the rate. As a rule, these are little-known cryptocurrencies with a low capitalization, in the common people known as shitcoins. Sometimes relatively large cryptocurrencies are used for pump&dump.
+                        </p>
+                        <p>
+                            After the purchase of the token, the pump starts - its "pumping". In messengers, news feeds, social networks and exchange chats, the rapid growth of the rate is announced and the name of the exchange platform is announced, where the organizers of the scam place and take large orders for the purchase of a token through their bots, raising its quotation. This is the first pump wave.
+                        </p>
+                        <p>
+                            Most of the major Bitcoin exchanges restrict this activity, and the coins on their listing are rarely suitable for the scheme. But there are popular platforms that support more than two hundred coins - they are the ones that attract scammers in the first place.
+                        </p>
+                        <p>
+                            Fake news feeds about partnerships, investments, or technology updates are used to warm up buyers. Paid "experts" are connected to the disinformation campaign. "Sensational" information is disseminated mainly through Telegram channels. Moreover, most of these channels directly report the pump, promising profit.
+                        </p>
+                        <p>
+                            After that, investors are sure: since they know about the pump in advance, they can make money. In fact, they are already victims, and some of them even pay to subscribe to such pump channels.
+                        </p>
+                        <p>
+                            In the event of a successful advertising campaign, the second wave of the pump begins - third-party investors come and independently influence the growth of the rate. Amid the excitement, the price rises, the organizers sell tokens at an inflated value, after which the cryptocurrency rate returns to its original indicators.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    @@include('_js.html')
+</body>
+
+</html>

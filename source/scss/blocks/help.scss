@@ -55,9 +55,16 @@
                 margin-bottom: 10px;
             }
         }
-        & strong {
+        & strong, & b  {
             font-weight: 800;
-            text-transform: uppercase;
+        }
+    }
+    & a {
+        color: #2A46CD;
+        @media (any-hover: hover) {
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
     & p {
@@ -75,6 +82,22 @@
             margin-bottom: 15px;
             }
         }
+
+        & strong, & b {
+            list-style: disc;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: clamp(14px, 1.391vw, 16.311px);
+            line-height: 125%;
+            color: #000000;
+        }
+    }
+
+
+
+    .wysiwyg-color-cyan120 {
+        color: #099;
     }
 }
 
@@ -107,6 +130,7 @@
         flex-direction: column;
     }
     &__link {
+        text-decoration: none;
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
@@ -126,6 +150,7 @@
 
         @media (any-hover: hover) {
             &:hover {
+                text-decoration: none !important;
                 color: #fff;
                 background: linear-gradient(0deg, rgba(10, 18, 60, 0) 0%, #0A123C 100%), #2A46CD;
                 border-radius: 9px;

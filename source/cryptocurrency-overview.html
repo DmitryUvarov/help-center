@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('_header.html', {
+        "nav": true
+        })
+
+
+
+        <main>
+
+            <section class="help">
+                <div class="help__container container">
+                    <aside class="aside">
+                        <div class="aside__title">Articles in this section</div>
+                        <div class="aside__links">
+                            <a href="" class="aside__link">Arbitrage</a>
+                            <a href="" class="aside__link active">Cryptocurrency Overview</a>
+                            <a href="" class="aside__link">Day Trading</a>
+                            <a href="" class="aside__link">Portfolio</a>
+                            <a href="" class="aside__link">Price Terms</a>
+                            <a href="" class="aside__link">Pump&Dump</a>
+                            <a href="" class="aside__link">Spot or Margin</a>
+                            <a href="" class="aside__link">Technical Analysis</a>
+                        </div>
+                    </aside>
+
+                    <div class="help__body">
+                        <h2>Cryptocurrency overview</h2>
+
+                        <h3>What is BTC (Bitcoin)?</h3>
+                        <p>Bitcoin is a reward for the work done in the form of a code.</p>
+                        <p>Bitcoin is the world's first cryptocurrency (decentralized digital currency). This currency is fundamentally different from all
+                            previously created electronic currencies and payment systems. It is not tied to any physical assets or “official” currencies,
+                            and the price of a digital coin - bitcoin - is governed solely by market supply and demand.</p>
+                        <p>Bitcoin is also a worldwide payment system through which transactions with this currency can be carried out.
+                            Its main difference from traditional payment systems is that the Bitcoin system does not have any control and processing center -
+                            all transactions take place exclusively in a network of equal clients.</p>
+                        <h3 class="text-subtitle">What is BCH (Bitcoin Cash)?</h3>
+                        <p>Bitcoin Cash is a cryptocurrency, a fork of Bitcoin that split from it. Forking from the main branch occurred on August 1, 2017. In 2018,
+                            Bitcoin SV peer-to-peer payment system branched off from Bitcoin Cash.
+                        </p>
+                        <p>Any user who had Bitcoin at the time of the fork became the owner of an equivalent amount of Bitcoin Cash. To prevent double-spending,
+                            Bitcoin Cash transactions use a new signature hashing algorithm that is not valid on the Bitcoin Legacy network. This prevents replay of Bitcoin Cash transactions on the Bitcoin blockchain and vice versa.
+                        </p>
+                        <p>The main difference from the "parent" cryptocurrency is the larger block size (8 MB instead of 1 MB), which favorably affects the speed
+                            of operations.</p>
+                        <p>So what are the main differences between BCH and BTC?
+                            The new currency operates on a protocol similar to bitcoin:
+                            SHA-256 hash calculation algorithm;
+                            the same reward system and Proof of Work consensus;
+                            the same "ceiling" of emission - no more than 21 million coins can be issued
+                            But there are also a few key differences:
+                            the main difference is the block size increased by 8 times, up to 8 megabytes;
+                            the complexity change scheme is different: it does not change every 2016 blocks, like BTC, but every 6
+                            Both currencies use the same Blockchain. Block number 478558 is the last of the common for both projects: the next one, 478559, is generated
+                            both in the BTC network and in BCH, but in different formats, which are mutually discarded by the blockchain branches of the "old"
+                            bitcoin and its fork. Thus, block 478559 became the first in the history of BCH.
+                        </p>
+                        <p>Of the minor innovations of a technical nature, which also give an advantage, it can be noted:
+                            implementation of protection against erasure of transactions and their replay;
+                            a special type of transaction, where the user is given the opportunity to sign separately the amount of transfers, making payments safe
+                        </p>
+                        <h3>What is ETH (Ethereum)?</h3>
+                        <p>Ethereum is a decentralized platform with smart contracts: applications that work exactly as programmed without any possibility of downtime,
+                            censorship, fraud or third party interference.
+                        </p>
+                        <p>These applications run on a custom blockchain, an extremely powerful shared global infrastructure that can move value and represent property
+                            ownership.
+                        </p>
+                        <p>This allows developers to create markets, keep registers of debts or promises, transfer funds according to instructions given in the
+                            past (like a will or a futures contract) and many other things that have not yet been invented, all without a middle man or counterparty risk.
+                        </p>
+                        <p>Ether is a necessary element - fuel - for the operation of the Ethereum distributed application platform.
+                            It is a form of payment made by clients of the platform for machines performing the requested transactions. In other words, ether is an incentive to ensure that developers write quality applications (wasteful code costs are greater) and that the network remains healthy (people are compensated for their resources).
+                        </p>
+                        <h3>What is USDT (Tether USD)?</h2>
+                            <p>Tether converts money into digital currency, pegs the value to local currencies such as the US dollar, euro and yen.
+                            </p>
+                            <p>As you know, blockchain has a number of advantages over traditional financial institutions as it offers cheap, fast, unlimited transactions without intermediaries. However, the volatility of exchange rates on the blockchain does not allow them to become widespread.
+                            </p>
+                            <p>The company combines the technology used by bitcoin with fiat currencies to take advantage of blockchain technology using a currency backed by the US Treasury or the European Central Bank. According to CEO Reeve Collins, the company is digitizing the dollar and bringing that digital dollar to the blockchain.
+                            </p>
+                            <p>Tether cryptocurrency is a virtual currency that is tied to real currency. The maintenance of stable quotes and other benefits provided by Tether make it a reliable option for both individuals and companies.
+                            </p>
+                            <h3>What is XRP (Ripple)?</h2>
+                                <p>Ripple is the world's only enterprise blockchain solution for global payments. Ripple's developers realized that despite numerous advances in technology, the payment infrastructure we continue to use today was actually built before the Internet took off or even evolved. Since then, he has seen only minimal updates. With Ripple, they are aiming to create a new payment infrastructure that improves reliability and speed while reducing costs.
+                                </p>
+                                <p>RippleNet is the Ripple network of payment providers, banks, corporations, and digital asset exchanges. It provides a seamless frictionless experience that allows you to send and receive money worldwide. RippleNet provides connectivity across various payment networks with instant settlement on demand. There is always confidence as you can track funds in real time. To top it off, it has low operating costs and low liquidity costs.
+                                </p>
+                                <p>XRP was specifically created for businesses as an on-demand option to provide liquidity in cross-border payments. Banks can use XRP to generate real-time liquidity on demand, without the need to pre-fund nostro accounts. Payment providers use it to enter other markets, improve the speed of payment settlements, or reduce the cost of foreign exchanges. You can buy or exchange XRP in several popular cryptocurrency markets.
+                                </p>
+                                <p>Compared to other cryptocurrencies, XRP installs incredibly quickly, taking only four seconds. In comparison, ETH takes two minutes to settle, and BTC takes over an hour. Traditional systems are even worse, three to five days. XRP is also highly scalable, processing 1,500 transactions every second. XRP can even scale to handle the same throughput as Visa. In comparison, ETH only has 15 transactions per second, while BTC only processes three to six.
+                                </p>
+                                <h3>What is LTC (Litecoin)?</h2>
+                                    <p>Litecoin is a blockchain-based cryptocurrency that works similarly to Ethereum and Bitcoin. It is a peer-to-peer internet currency that allows almost zero payments to be received instantly by anyone in the world. It is a decentralized payment network that is not operated by any central authority. The network, like other blockchains, is powered by mathematics. Individuals can control their own finances without relying on third parties such as banks or traditional financial institutions.
+                                    </p>
+                                    <p>One of the first advantages Litecoin has over Bitcoin is its higher transaction volume: the blockchain generates blocks more often, which means that transactions can be processed faster (2.5 minutes, not 10 minutes).
+                                    </p>
+                                    <p>Litecoin is open source software. The software project was released under the MIT/X11 license, which means that users have the right to run, modify and copy the software, and distribute modified versions of the software at their choice. Litecoin has a transparent release process that facilitates independent verification of binaries and their respective source code.
+                                    </p>
+                                    <h3>What is LINK (ChainLink)?</h2>
+                                        <p>ChainLink has developed oracles that can enable a smart contract developer to interact with a variety of data providers, payment solutions, and the traditional banking system:
+                                        </p>
+                                        <img src="/help/src/img/ChainLink.png">
+                                        <p>With the help of oracles, it is possible to provide programmable contracts that make payments between two parties after certain criteria are met, without involving an intermediary.
+                                        </p>
+                                        <p>Smart contract securities require feeds of market price data and market reference data such as interest rates. They usually also have to pay existing bank accounts for many of their users, which can only be done through ChainLink, which connects to the existing banking system.
+                                        </p>
+                                        <p>ChainLink's LINK network is the first decentralized oracle network that allows anyone to securely provide smart contracts with access to key external data, OTC payments and any other API capabilities. Anyone with a data feed, a useful off-chain service like local payments or any other API can now provide it directly for smart contracts in exchange for LINK tokens.
+                                        </p>
+                                        <p>ChainLink supports Ethereum, Bitcoin and Hyperledger. Since the project is a decentralized network, users can be rewarded for decentralization, trust, and immutability from using ChainLink oracle.
+                                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    @@include('_js.html')
+</body>
+
+</html>

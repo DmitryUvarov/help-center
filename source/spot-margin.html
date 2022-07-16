@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('_header.html', {
+        "nav": true
+        })
+
+
+
+        <main>
+
+            <section class="help">
+                <div class="help__container container">
+                    <aside class="aside">
+                        <div class="aside__title">Articles in this section</div>
+                        <div class="aside__links">
+                            <a href="" class="aside__link">Arbitrage</a>
+                            <a href="" class="aside__link">Cryptocurrency Overview</a>
+                            <a href="" class="aside__link">Day Trading</a>
+                            <a href="" class="aside__link">Portfolio</a>
+                            <a href="" class="aside__link">Price Terms</a>
+                            <a href="" class="aside__link">Pump&Dump</a>
+                            <a href="" class="aside__link active">Spot or Margin</a>
+                            <a href="" class="aside__link">Technical Analysis</a>
+                        </div>
+                    </aside>
+
+                    <div class="help__body">
+                        <h2>Price Terms</h2>
+
+                        <h3>Spot Trading</h2>
+                            <p>This type of trading occurs in the spot market at the current price. When you are engaged in spot trading, you make a deal at an affordable bid and ask price, which is requested by other market participants. To complete a trade, you need to have available assets to pay for the trade by the settlement date.
+                                For example, if you are going to make a purchase of BTC in the amount of $1,500, then you must make a deposit by the date of settlement of at least the specified amount. Usually the date is calculated according to the T + 2 trading day scheme. Otherwise, the exchange will refuse to enter the Bitcoin position.
+                            </p>
+                            <h3>Margin Trading</h2>
+                                <p>With margin trading, you borrow funds from a third party to increase your position. Margin and spot trading are different. With margin trading, you do not need the full amount of the transaction to open a position, you just need to have assets that will be on the margin of the position you are going to open.
+                                    <b>For example</b>, you are going to buy BTC for $1000. Some platforms are ready to provide you with up to 100x leverage. That is, you only need $10 on your account to trade Bitcoin for $1,000 BTC.
+                                    To keep a position open, you only need to hold 1% (with 100x leverage) of the contract amount. Depending on the course of the trade, you can open even more positions or withdraw profits.
+                                </p>
+                                <h3>What to choose?</h2>
+                                    <p><b>Spot Trading: benefits</b>
+                                        Management of risks: trading occurs only with your own balance, which you actually own, that is, the impossibility of going into a negative.
+                                        Guarantee: spot trading takes place only on own assets. In this way, the exchange ensures that you avoid over-leveraging. </p>
+                                    <p><b>Spot Trading: limitations</b>
+                                        Missed trading opportunities: even with confidence in the deal, you will not be able to earn 100% or more, you will only be able to earn the amount that your capital allows.
+                                    </p>
+                                    <p><b>Margin Trading: benefits</b>
+                                        Possibility of increasing profits: the presence of leverage allows you to increase your trade up to 100 times in comparison with your capital.
+                                        Low-frequency trading: an increased likelihood of trades identified in this type of trading. </p>
+                                    <p><b>Margin Trading: limitations</b>
+                                        Risks: Opportunity to lose more money than the initial investment.
+                                        Liquidation: complete liquidation of a position with insufficient funds to cover losses.
+                                    </p>
+                                    <h3>What strategy should you follow?</h2>
+                                        <p>It all depends on your usual trading style and your character: are you tolerant of risks, what knowledge about investing you have.
+                                            Choose the strategies that are right for you.
+                                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    @@include('_js.html')
+</body>
+
+</html>

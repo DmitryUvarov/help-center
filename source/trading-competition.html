@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/css2.css"> -->
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('_header.html', {
+        "nav": true
+        })
+
+
+
+        <main>
+
+            <section class="help">
+                <div class="help__container container">
+                    <aside class="aside">
+                        <div class="aside__title">Articles in this section</div>
+                        <div class="aside__links">
+                            <a href="" class="aside__link">Listing Schedule</a>
+                            <a href="" class="aside__link">Mobile App</a>
+                            <a href="" class="aside__link active">Trading Competition</a>
+                        </div>
+                    </aside>
+
+                    <div class="help__body">
+                        <h2>Monowork Trading Competition</h2>
+
+
+                        <p style="    font-weight: bold;">
+                            Dear Monowork Users:
+                            We welcome you to participate in the “Monowork Trading Competition”.
+                            You will have an opportunity to share a 300,000 USDT prize pool and receive an award in BTC, ETH or USDT.
+                        </p>
+                        <div style="font-size: 18px;">
+                            <ol>
+                                <li><a href="#terms">Terms and Conditions</a></li>
+                                <li><a href="#rewards">Rewards Distribution</a></li>
+                                <li><a href="#rank1">Trading Volume Ranking List</a></li>
+                                <li><a href="#rank2">Biggest Deposit Ranking List</a></li>
+                                <li><a href="#rank3">Profit on Trade Ranking List</a></li>
+                                <li><a href="#risk">Risk Warning</a></li>
+                            </ol>
+                        </div>
+                        <h2 id="terms" class="text-subtitle" style="text-align: center;    font-weight: bold;
+                            ">Terms and Conditions</h2>
+                        <ul>
+                            <li>The event apply both for existing and new users.</li>
+                            <li>The platform takes a snapshot of the user’s account assets every day at 00:00 as a base,
+                                and calculates the change in the overall profit rate of account assets at 23:59 that day as the profit rate of the day.</li>
+                            <li>In this competition, only spot orders will be taken into
+                                account when calculating the trading volume. Volume and profit from margin orders are not taken into account.</li>
+                            <li>Rewards will be distributed within two days after the campaign ends.</li>
+                            <li>Our Exchange reserve the right to the final explanation of the campaign.</li>
+                            <li>Our Exchange reserve the right to disqualify any participants showing signs of fraudulent behavior or
+                                users that violate the rules of self-dealing, wash trading, and use multiple accounts..</li>
+                        </ul>
+                        <h2 id="rewards" class="text-subtitle" style="text-align: center;    font-weight: bold;
+                            ">Rewards Distribution</h2>
+                        <p style="font-weight: bold;">For the largest trading volume during the month
+                            top 30 participants will receive an award in ETH.
+                            The distribution of the award will be done according to the following scheme:
+                        </p>
+                        <table class="" border="1" style="    border-spacing: 0;    margin: 0 auto;">
+                            <tbody>
+                                <tr>
+                                    <td class="wysiwyg-text-align-center" width="264">
+                                        <p>Ranking</p>
+                                    </td>
+                                    <td class="wysiwyg-text-align-center" width="261">
+                                        <p>Rewards</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wysiwyg-text-align-center" width="264">
+                                        <p>1st place</p>
+                                    </td>
+                                    <td class="wysiwyg-text-align-center" width="261">
+                                        <p>10 ETH</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wysiwyg-text-align-center" width="264">
+                                        <p>2nd place</p>
+                                    </td>
+                                    <td class="wysiwyg-text-align-center" width="261">
+                                        <p>7 ETH</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wysiwyg-text-align-center" width="264">
+                                        <p>3rd place</p>
+                                    </td>
+                                    <td class="wysiwyg-text-align-center" width="261">
+                                        <p>5 ETH</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wysiwyg-text-align-center" width="264">
+                                        <p>4th-10th place</p>
+                                    </td>
+                                    <td class="wysiwyg-text-align-center" width="261">
+                                        <p>3 ETH for each participant</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wysiwyg-text-align-center" width="264">
+                                        <p>11th-30th place</p>
+                                    </td>
+                                    <td class="wysiwyg-text-align-center" width="261">
+                                        <p>1 ETH for each participant</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <p style="font-weight: bold;">The biggest deposits during the month
+                            top 30 participants will receive an award in BTC.
+                            The distribution of the award will be done according to the following scheme:
+                        </p>
+                        <table class="" border="1" style="    border-spacing: 0;    margin: 0 auto;">
+                            <tbody>
+                                <tr>
+                                    <td class="wysiwyg-text-align-center" width="264">
+                                        <p>Ranking</p>
+                                    </td>
+                                    <td class="wysiwyg-text-align-center" width="261">
+                                        <p>Rewards</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wysiwyg-text-align-center" width="264">
+                                        <p>1st place</p>
+                                    </td>
+                                    <td class="wysiwyg-text-align-center" width="261">
+                                        <p>0.4 BTC</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wysiwyg-text-align-center" width="264">
+                                        <p>2nd place</p>
+                                    </td>
+                                    <td class="wysiwyg-text-align-center" width="261">
+                                        <p>0.3 BTC</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wysiwyg-text-align-center" width="264">
+                                        <p>3rd place</p>
+                                    </td>
+                                    <td class="wysiwyg-text-align-center" width="261">
+                                        <p>0.2 BTC</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wysiwyg-text-align-center" width="264">
+                                        <p>4th-10th place</p>
+                                    </td>
+                                    <td class="wysiwyg-text-align-center" width="261">
+                                        <p>0.1 BTC for each participant</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wysiwyg-text-align-center" width="264">
+                                        <p>11th-30th place</p>
+                                    </td>
+                                    <td class="wysiwyg-text-align-center" width="261">
+                                        <p>0.05 BTC for each participant</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <p style="font-weight: bold;">Top 30 participants who got the biggest profit on their trades by the end of the month
+                            will receive an award in USDT.
+                            The distribution of the award will be done according to the following scheme:
+                        </p>
+                        <table class="" border="1" style="    border-spacing: 0;    margin: 0 auto;">
+                            <tbody>
+                                <tr>
+                                    <td class="wysiwyg-text-align-center" width="264">
+                                        <p>Ranking</p>
+                                    </td>
+                                    <td class="wysiwyg-text-align-center" width="261">
+                                        <p>Rewards</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wysiwyg-text-align-center" width="264">
+                                        <p>1st place</p>
+                                    </td>
+                                    <td class="wysiwyg-text-align-center" width="261">
+                                        <p>$5,000 USDT</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wysiwyg-text-align-center" width="264">
+                                        <p>2nd place</p>
+                                    </td>
+                                    <td class="wysiwyg-text-align-center" width="261">
+                                        <p>$4,000 USDT</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wysiwyg-text-align-center" width="264">
+                                        <p>3rd place</p>
+                                    </td>
+                                    <td class="wysiwyg-text-align-center" width="261">
+                                        <p>$3,000 USDT</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wysiwyg-text-align-center" width="264">
+                                        <p>4th-10th place</p>
+                                    </td>
+                                    <td class="wysiwyg-text-align-center" width="261">
+                                        <p>$2,000 USDT for each participant</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="wysiwyg-text-align-center" width="264">
+                                        <p>11th-30th place</p>
+                                    </td>
+                                    <td class="wysiwyg-text-align-center" width="261">
+                                        <p>$1,000 USDT for each participant</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br><br>
+                        <div id="rank1" class="ranks" style="
+                                /* padding: 40px 150px; */
+                            ">
+                            <div class="css-cmtnz4" style="
+                                display: flex;
+                                -webkit-box-pack: center;
+                                justify-content: center;
+                            ">
+                            </div>
+                            <h3 style="text-align: center;    font-weight: bold;
+                            ">Trading Volume Ranking List</h2>
+                                <div class="css-1ai2851" style="
+                                width: 100%;
+                                text-align: center;
+                                font-size: 16px;
+                                line-height: 21px;
+                                color: rgb(33, 40, 51);
+                                margin: 30px 0px;
+                            ">Your Trading Volume: <strong>? USDT</strong> Your Ranking:<strong>?</strong> <a href="/login">please Log In » </a></div>
+                                <div class="css-1wv5oli" style="
+                                text-align: center;
+                                /* height: auto; */
+                                /* overflow: hidden; */
+                                /* position: relative; */
+                                /* top: 18px; */
+                            "></div>
+                                <div class="css-b2rhyy">
+                                    <div class="css-1halj17">
+                                        <div class="rc-table">
+                                            <div class="rc-table-container">
+                                                <div class="rc-table-content">
+                                                    <table style="table-layout: auto;">
+                                                        <colgroup>
+                                                            <col style="width: 320px; min-width: 320px;">
+                                                            <col style="width: 320px; min-width: 320px;">
+                                                            <col style="width: 320px; min-width: 320px;">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="rc-table-cell" style="text-align: center;background: rgb(249, 249, 250);color: rgb(132, 142, 156);font-size: 12px;font-weight: normal;transition: background 0.3s ease 0s;">
+                                                                    Ranking</th>
+                                                                <th class="rc-table-cell" style="background: rgb(249, 249, 250);color: rgb(132, 142, 156);font-size: 12px;font-weight: normal;transition: background 0.3s ease 0s;text-align: center;">
+                                                                    Email</th>
+                                                                <th class="rc-table-cell" style="text-align: right;background: rgb(249, 249, 250);color: rgb(132, 142, 156);font-size: 12px;font-weight: normal;transition: background 0.3s ease 0s;">
+                                                                    Trading Volume (USDT) </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="rc-table-tbody">
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;"><img width="30" src="img/trading-competition1.svg" alt="NO1"></td>
+                                                                <td class="rc-table-cell" style="text-align: center;">g********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9afefdda">[email&#160;protected]</a>***.com</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">163083.33 USDT</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;"><img width="30" src="img/trading-competition2.svg" alt="NO2"></td>
+                                                                <td class="rc-table-cell" style="text-align: center;">a********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a69294e6">[email&#160;protected]</a>***.com</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">134423.03 USDT</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;"><img width="30" src="img/trading-competition3.svg" alt="NO3"></td>
+                                                                <td class="rc-table-cell" style="text-align: center;">v********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d0bcb290">[email&#160;protected]</a>***.com</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">129378.00 USDT</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;">4</td>
+                                                                <td class="rc-table-cell" style="text-align: center;">b********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="92f1f7d2">[email&#160;protected]</a>***.com</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">127302.01 USDT</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;">5</td>
+                                                                <td class="rc-table-cell" style="text-align: center;">d********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="afc0ddef">[email&#160;protected]</a>***.org</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">124000.55 USDT</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;">6</td>
+                                                                <td class="rc-table-cell" style="text-align: center;">a********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0d797e4d">[email&#160;protected]</a>***.fun</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">119033.03 USDT</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;">7</td>
+                                                                <td class="rc-table-cell" style="text-align: center;">f********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="305e5770">[email&#160;protected]</a>***.ru</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">111399.04 USDT</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;">8</td>
+                                                                <td class="rc-table-cell" style="text-align: center;">i********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1f7c7e5f">[email&#160;protected]</a>***.com</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">101011.33 USDT</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;">9</td>
+                                                                <td class="rc-table-cell" style="text-align: center;">b********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1d782c5d">[email&#160;protected]</a>***.com</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">98000.00 USDT</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;">10</td>
+                                                                <td class="rc-table-cell" style="text-align: center;">***********@***.org</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">93012.85 USDT</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mask">
+                                            <div class="Spinner-sc-1inb7oe-0 fhWQum">
+                                                <div class="rect2"></div>
+                                                <div class="rect3"></div>
+                                                <div class="rect4"></div>
+                                                <div class="rect5"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <br><br>
+                        <div id="rank2" class="ranks" style="
+                                /* padding: 40px 150px; */
+                            ">
+                            <div class="css-cmtnz4" style="
+                                display: flex;
+                                -webkit-box-pack: center;
+                                justify-content: center;
+                            ">
+                            </div>
+                            <h3 style="text-align: center;    font-weight: bold;
+                            ">Biggest Deposit Ranking List</h2>
+                                <div class="css-1ai2851" style="
+                                width: 100%;
+                                text-align: center;
+                                font-size: 16px;
+                                line-height: 21px;
+                                color: rgb(33, 40, 51);
+                                margin: 30px 0px;
+                            "> Your Trading Volume: <strong>? USDT</strong> Your Ranking:<strong>?</strong> <a href="/login">please Log In » </a>
+                                </div>
+                                <div class="css-1wv5oli" style="
+                                text-align: center;
+                                /* height: auto; */
+                                /* overflow: hidden; */
+                                /* position: relative; */
+                                /* top: 18px; */
+                            "></div>
+                                <div class="css-b2rhyy">
+                                    <div class="css-1halj17">
+                                        <div class="rc-table">
+                                            <div class="rc-table-container">
+                                                <div class="rc-table-content">
+                                                    <table style="table-layout: auto;">
+                                                        <colgroup>
+                                                            <col style="width: 320px; min-width: 320px;">
+                                                            <col style="width: 320px; min-width: 320px;">
+                                                            <col style="width: 320px; min-width: 320px;">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr style="
+                                /* background: rgb(249, 249, 250); */
+                                /* color: rgb(132, 142, 156); */
+                                /* font-size: 12px; */
+                                /* font-weight: normal; */
+                                /* transition: background 0.3s ease 0s; */
+                            ">
+                                                                <th class="rc-table-cell" style="text-align: center;background: rgb(249, 249, 250);color: rgb(132, 142, 156);font-size: 12px;font-weight: normal;transition: background 0.3s ease 0s;">
+                                                                    Ranking</th>
+                                                                <th class="rc-table-cell" style="background: rgb(249, 249, 250);color: rgb(132, 142, 156);font-size: 12px;font-weight: normal;transition: background 0.3s ease 0s;text-align: center;">
+                                                                    Email</th>
+                                                                <th class="rc-table-cell" style="text-align: right;background: rgb(249, 249, 250);color: rgb(132, 142, 156);font-size: 12px;font-weight: normal;transition: background 0.3s ease 0s;">
+                                                                    Biggest Deposit </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="rc-table-tbody">
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;"><img width="30" src="img/trading-competition1.svg" alt="NO1"></td>
+                                                                <td class="rc-table-cell" style="text-align: center;">d********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1c28285c">[email&#160;protected]</a>***.com</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">11.02 BTC</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;"><img width="30" src="img/trading-competition2.svg" alt="NO2"></td>
+                                                                <td class="rc-table-cell" style="text-align: center;">z********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2d40446d">[email&#160;protected]</a>***.com</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">9.32 BTC</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;"><img width="30" src="img/trading-competition3.svg" alt="NO3"></td>
+                                                                <td class="rc-table-cell" style="text-align: center;">a********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0c6f7a4c">[email&#160;protected]</a>***.net</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">9.18 BTC</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;">4</td>
+                                                                <td class="rc-table-cell" style="text-align: center;">d********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f69493b6">[email&#160;protected]</a>***.org</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">6.00 BTC</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;">5</td>
+                                                                <td class="rc-table-cell" style="text-align: center;">d********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="80f9f5c0">[email&#160;protected]</a>***.com</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">5.91 BTC</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;">6</td>
+                                                                <td class="rc-table-cell" style="text-align: center;">k********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="40343300">[email&#160;protected]</a>****.ru</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">5.74 BTC</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;">7</td>
+                                                                <td class="rc-table-cell" style="text-align: center;">e********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="234d4e63">[email&#160;protected]</a>***.com</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">3.51 BTC</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;">8</td>
+                                                                <td class="rc-table-cell" style="text-align: center;">a********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4c2a280c">[email&#160;protected]</a>***.org</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">3.32 BTC</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;">9</td>
+                                                                <td class="rc-table-cell" style="text-align: center;">b********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d5b0e695">[email&#160;protected]</a>***.com</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">2.29 BTC</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;">10</td>
+                                                                <td class="rc-table-cell" style="text-align: center;">g*******<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8ffafde4cf">[email&#160;protected]</a>****.com</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">2.22 BTC</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mask">
+                                            <div class="Spinner-sc-1inb7oe-0 fhWQum">
+                                                <div class="rect2"></div>
+                                                <div class="rect3"></div>
+                                                <div class="rect4"></div>
+                                                <div class="rect5"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <br><br>
+                        <div id="rank3" class="ranks" style="
+                                /* padding: 40px 150px; */
+                            ">
+                            <div class="css-cmtnz4" style="
+                                display: flex;
+                                -webkit-box-pack: center;
+                                justify-content: center;
+                            ">
+                            </div>
+                            <h3 style="text-align: center;    font-weight: bold;
+                            ">Profit on Trade Ranking List</h2>
+                                <div class="css-1ai2851" style="
+                                width: 100%;
+                                text-align: center;
+                                font-size: 16px;
+                                line-height: 21px;
+                                color: rgb(33, 40, 51);
+                                margin: 30px 0px;
+                            "> Your Trading Volume: <strong>? USDT</strong> Your Ranking:<strong>?</strong> <a href="/login">please Log In » </a>
+                                </div>
+                                <div class="css-1wv5oli" style="
+                                text-align: center;
+                                /* height: auto; */
+                                /* overflow: hidden; */
+                                /* position: relative; */
+                                /* top: 18px; */
+                            "></div>
+                                <div class="css-b2rhyy">
+                                    <div class="css-1halj17">
+                                        <div class="rc-table">
+                                            <div class="rc-table-container">
+                                                <div class="rc-table-content">
+                                                    <table style="table-layout: auto;">
+                                                        <colgroup>
+                                                            <col style="width: 320px; min-width: 320px;">
+                                                            <col style="width: 320px; min-width: 320px;">
+                                                            <col style="width: 320px; min-width: 320px;">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr style="
+                                /* background: rgb(249, 249, 250); */
+                                /* color: rgb(132, 142, 156); */
+                                /* font-size: 12px; */
+                                /* font-weight: normal; */
+                                /* transition: background 0.3s ease 0s; */
+                            ">
+                                                                <th class="rc-table-cell" style="text-align: center;background: rgb(249, 249, 250);color: rgb(132, 142, 156);font-size: 12px;font-weight: normal;transition: background 0.3s ease 0s;">
+                                                                    Ranking</th>
+                                                                <th class="rc-table-cell" style="background: rgb(249, 249, 250);color: rgb(132, 142, 156);font-size: 12px;font-weight: normal;transition: background 0.3s ease 0s;text-align: center;">
+                                                                    Email</th>
+                                                                <th class="rc-table-cell" style="text-align: right;background: rgb(249, 249, 250);color: rgb(132, 142, 156);font-size: 12px;font-weight: normal;transition: background 0.3s ease 0s;">
+                                                                    Trading Profit (USDT) </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="rc-table-tbody">
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;"><img width="30" src="/help/src/img/trading-competition1.svg" alt="NO1"></td>
+                                                                <td class="rc-table-cell" style="text-align: center;">m********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c1aaab81">[email&#160;protected]</a>***.com</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">14501.21 USDT</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;"><img width="30" src="/help/src/img/trading-competition2.svg" alt="NO2"></td>
+                                                                <td class="rc-table-cell" style="text-align: center;">a********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="73454533">[email&#160;protected]</a>***.com</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">11031.00 USDT</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;"><img width="30" src="/help/src/img/trading-competition3.svg" alt="NO3"></td>
+                                                                <td class="rc-table-cell" style="text-align: center;">g********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d5a0b295">[email&#160;protected]</a>***.com</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">9033.00 USDT</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;">4</td>
+                                                                <td class="rc-table-cell" style="text-align: center;">z********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="385b5c78">[email&#160;protected]</a>***.com</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">7400.01 USDT</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;">5</td>
+                                                                <td class="rc-table-cell" style="text-align: center;">x********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b7cfcff7">[email&#160;protected]</a>****.ru</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">7321.00 USDT</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;">6</td>
+                                                                <td class="rc-table-cell" style="text-align: center;">z********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="22565162">[email&#160;protected]</a>***.ru</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">5664.00 USDT</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;">7</td>
+                                                                <td class="rc-table-cell" style="text-align: center;">fx********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="640a1c24">[email&#160;protected]</a>***.com</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">2833.03 USDT</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;">8</td>
+                                                                <td class="rc-table-cell" style="text-align: center;">x********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4c2f2d0c">[email&#160;protected]</a>***.com</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">2560.00 USDT</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;">9</td>
+                                                                <td class="rc-table-cell" style="text-align: center;">b********<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b1d480f1">[email&#160;protected]</a>***.com</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">2103.44 USDT</td>
+                                                            </tr>
+                                                            <tr class="rc-table-row rc-table-row-level-0">
+                                                                <td class="rc-table-cell" style="text-align: center;">10</td>
+                                                                <td class="rc-table-cell" style="text-align: center;">***********@***.ru</td>
+                                                                <td class="rc-table-cell" style="text-align: right;">1990.00 USDT</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mask">
+                                            <div class="Spinner-sc-1inb7oe-0 fhWQum">
+                                                <div class="rect2"></div>
+                                                <div class="rect3"></div>
+                                                <div class="rect4"></div>
+                                                <div class="rect5"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <br><br>
+                        <h2 id="risk" class="text-subtitle" style="text-align: center;    font-weight: bold;
+                            ">Risk Warning</h2>
+                        <p>Cryptocurrency trading is subject to high market risk. Please make your trades cautiously.
+                            Our exchange will make best efforts to choose high-quality coins, but will not be responsible for your trading losses.
+                            Digital asset derivatives trading is highly leveraged and risky, and may result in partial or total loss of account funds. Before conducting contract trading, investors must ensure that they understand the nature and rules of contract trading, and decide whether
+                            to participate in contract trading based on their investment experience, goals, financial status, and ability to bear risks.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    @@include('_js.html')
+</body>
+
+</html>

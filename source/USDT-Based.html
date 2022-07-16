@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('_header.html', {
+        "nav": true
+        })
+
+
+
+        <main>
+
+            <section class="help">
+                <div class="help__container container">
+                    <aside class="aside">
+                        <div class="aside__title">Articles in this section</div>
+                        <div class="aside__links">
+                            <a href="" class="aside__link">How to Withdraw Coins</a>
+                            <a href="" class="aside__link">Invalid Google 2FA Code</a>
+                            <a href="" class="aside__link active">USDT Based on Different Chain</a>
+                            <a href="" class="aside__link">Withdrawal Did Not Go Through</a>
+                        </div>
+                    </aside>
+
+                    <div class="help__body">
+                        <h2>USDT Based on TRC20 & ERC20 & BEP20 & MATIC</h2>
+
+
+                        <p><span>Monowork users will be able to deposit and withdraw USDT
+                                in different forms: <strong><span class="wysiwyg-color-cyan120"> USDT-ERC20, USDT-TRC20, USDT-BEP20,
+                                        USDT-MATIC, USDT-SOL.</span></strong></span></p>
+                        <p><span>To ensure that users can freely choose their favored forms of
+                                USDT to deposit and withdraw at any time, Monowork will exchange four forms of
+                                USDT in advance to ensure an adequate balance of these 4 forms of USDT. If you do not agree to the exchange,
+                                please do not deposit or withdraw USDT.</span></p>
+                        <p><span>Notes：</span></p>
+                        <ul>
+                            <li><span><span class="wysiwyg-color-cyan120"><strong>USDT-ERC20</strong></span> is the USDT issued by Tether based on the ETH network. Its deposit address is the ETH address, with deposits and withdrawals taking place on the ETH network. The protocol of USDT-ERC20 is the ERC20 protocol.</span></li>
+                            <li><span><span class="wysiwyg-color-cyan120"><strong>USDT-TRON (TRC20)</strong></span> is the USDT issued by Tether based on the TRON network. The currency deposit address is the TRON address, with deposits and withdrawals taking place on the TRON network. The USDT-TRON (TRC20) uses the TRC20 protocol.</span></li>
+                            <li><span><span class="wysiwyg-color-cyan120"><strong>USDT-SOL</strong></span> is the USDT issued by Tether based on the SOL network. The currency deposit address is the SOL address, with deposits and withdrawals taking place on the SOL network. The USDT-SOL uses the SOL protocol.</span></li>
+                            <li><span><span class="wysiwyg-color-cyan120"><strong>USDT-BEP20</strong></span> is the USDT issued by Tether based on the BNB network. The currency deposit address is the BEP20 address, with deposits and withdrawals taking place on the BNB network. The USDT-BNB uses the BEP20 protocol.</span></li>
+                            <li><span><span class="wysiwyg-color-cyan120"><strong>USDT-MATIC</strong></span> is the USDT issued by Tether based on the POLYGON network. The currency deposit address is the MATIC address, with deposits and withdrawals taking place on the POLYGON network. The USDT-MATIC uses the PILYGON protocol.</span></li>
+                        </ul>
+                        <p>&nbsp;</p>
+                        <p><strong>1. How to get your USDT wallet address?</strong></p>
+                        <p><span>Please choose the public chain to get the corresponding USDT deposit address. Please ensure the public chain and address are correct.</span></p>
+                        <p></p>
+                        <p><strong>2. How to withdraw USDT based on different forms?</strong></p>
+                        <p>Please input the withdrawal address. The system will identify the public chain automatically.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    @@include('_js.html')
+</body>
+
+</html>

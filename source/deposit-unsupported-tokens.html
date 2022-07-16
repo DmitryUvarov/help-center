@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('_header.html', {
+        "nav": true
+        })
+
+
+
+        <main>
+
+            <section class="help">
+                <div class="help__container container">
+                    <aside class="aside">
+                        <div class="aside__title">Articles in this section</div>
+                        <div class="aside__links">
+                            <a href="" class="aside__link">Deposit Did Not Arrive</a>
+                            <a href="" class="aside__link active">Deposit Unsupported Tokens</a>
+                            <a href="" class="aside__link">Deposit Wrong Crypto</a>
+                            <a href="" class="aside__link">How to Deposit Crypto</a>
+
+                        </div>
+                    </aside>
+
+                    <div class="help__body">
+                        <h2>What Can I Do If Deposit Unsupported Tokens?</h2>
+
+                        <p> Before you deposit, please check the deposit page to confirm if we support the BSC/MATIC/FTM token you want to deposit
+                            (as shown below, if we support the BEP20 token, the deposit interface will display the BEP20 deposit address).
+                            If we don't support it, then please do not deposit the token to your Monowork account, otherwise, your deposit will
+                            not be credited.</p>
+                        <p>If you have already deposited the unsupported token, please kindly gather the information below for further checking.</p>
+                        <p>1. Your UID/Registered email address.</p>
+                        <p>2. The type and amount of the token you deposit.</p>
+                        <p>3. The txid.</p>
+                        <p>4. The screenshot of the transaction from the withdrawal party. (Please log in to the withdrawal account, search the withdrawal
+                            history and find the corresponding withdrawal record. Please ensure that the txid, token type, amount and address should be on the screenshot. If you deposit from your private wallet such as MEW, please provide a screenshot of your account address.)</p>
+                        <p>Please submit a request and provide the information above, we will check the details for you. After you submit the request,
+                            please wait patiently, we will reply to your email if there is any updates. At the same time, in order to solve your problem
+                            as soon as possible, please do not repeat to submit to avoid problem overlap, thank you for your support.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    @@include('_js.html')
+</body>
+
+</html>
