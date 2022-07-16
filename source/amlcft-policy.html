@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('_header.html', {
+        "nav": true
+        })
+
+
+
+        <main>
+
+            <section class="help">
+                <div class="help__container container">
+                    <aside class="aside">
+                        <div class="aside__title">Articles in this section</div>
+                        <div class="aside__links">
+                            <a href="amlcft-policy.html" class="aside__link active">AML&CFT Policy</a>
+                            <a href="cookies-policy.html" class="aside__link">Cookies Policy</a>
+                            <a href="privacy-policy.html" class="aside__link">Privacy Policy</a>
+                            <a href="risk-warning.html" class="aside__link">Risk Warning</a>
+                            <a href="user-agreement.html" class="aside__link">User Agreement</a>
+                        </div>
+                    </aside>
+
+                    <div class="help__body">
+                        <h2>AML&CFT Policy</h2>
+
+                        <p> Money laundering is defined as the process where the identity of the proceeds of crime is so disguised
+                            that it gives an impression of legitimate income. Criminals specifically target financial services firms
+                            through which they attempt to launder criminal proceeds without the firm's knowledge or suspicion.</p>
+                        <p> In response to the scale and effect of money laundering, the European Union has passed Directive
+                            designed to combat money laundering and terrorism. These Directives, together with regulations, rules
+                            and industry guidance, form the cornerstone of our AML/CTF obligations and outline the offenses and
+                            penalties for failing to comply.</p>
+                        <p> Whilst Monowork.com is currently unregulated and does not fall within the scope of the AML/CFT
+                            obligations, the senior management have implemented systems and procedures that meet the standardss
+                            et forth by the European Union. This decision reflects the senior management's desire to prevent money
+                            laundering and not be used by criminals to launder proceeds of crime.</p>
+
+                        <h3>Anti-Money Laundering (AML) Policy:</h3>
+                        <p>The Monowork.com's AML Policy is designed to prevent money laundering by meeting the European
+                            standards on combating money laundering and terrorism financing, including the need to have
+                            adequate systems and controls in place to mitigate the risk of the firm being used to facilitate
+                            financial crime. This AML Policy sets out the minimum standards which must be complied
+                            with and includes:</p>
+
+                        <ul>
+                            <li>Appointing a Money Laundering Reporting Officer (MLRO) who has a sufficient level of seniority and
+                                independence, and who has responsibility for oversight of compliance with the relevant legislation,
+                                regulations, rules and industry guidance;</li>
+                            <li>Establishing and maintaining a Risk-Based Approach (RBA) to the assessment and management of
+                                money laundering and terrorist financing risks faced by the firm;</li>
+                            <li>Establishing and maintaining risk-based Customer Due Diligence (CDD), identification, verification and
+                                Know Your Customer (KYC) procedures, including enhanced due diligence for customers presenting
+                                a higher risk, such as Politically Exposed Persons (PEPs);</li>
+                            <li>Establishing and maintaining risk-based systems and procedures for the monitoring of on-going
+                                customer activity;</li>
+                            <li>Establishing procedures for reporting suspicious activity internally and to the relevant law enforcement
+                                authorities as appropriate;</li>
+                            <li>Maintaining appropriate records for the minimum prescribed periods;</li>
+                            <li>Providing training for and raising awareness among all relevant employees.</li>
+                        </ul>
+
+                        <h3>Sanctions Policy:</h3>
+                        <p>Monowork.com is prohibited from transacting with individuals, companies and countries that are on
+                            prescribed sanctions lists. Monowork.com will therefore screen against United Nations, European
+                            Union, UK Treasury and US Office of Foreign Assets Control (OFAC) sanctions lists in all jurisdictions
+                            in which we operate.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    @@include('_js.html')
+</body>
+
+</html>

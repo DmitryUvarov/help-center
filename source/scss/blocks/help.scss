@@ -47,7 +47,7 @@
             font-family: 'Inter';
             font-style: normal;
             font-weight: 400;
-            font-size: 16.311px;
+            font-size: clamp(14px, 1.391vw, 16.311px);
             line-height: 125%;
             color: #000000;
 
