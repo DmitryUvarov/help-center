@@ -1,3 +1,13 @@
 .btn {
-
+    cursor: pointer;
+    display: block;
+    padding: 15px;
+    background: #0077F6;
+    border-radius: 13.012px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(18px, 2vw, 23.2736px);
+    line-height: 121%;
+    color: #FFFFFF;
 }

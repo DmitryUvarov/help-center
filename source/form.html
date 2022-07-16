@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('_header.html')
+
+        <main>
+
+            <section>
+                <div class="container">
+                    <form action="#" class="main-form">
+                        <div class="main-form__title">Submit a request</div>
+                        <fieldset class="main-form__fieldset">
+                            <label for="#">Your email address</label>
+                            <input type="text" placeholder="Your email address">
+                        </fieldset>
+                        <fieldset class="main-form__fieldset">
+                            <label for="#">Subject</label>
+                            <input type="text" placeholder="">
+                        </fieldset>
+                        <fieldset class="main-form__fieldset">
+                            <label for="#">Description</label>
+                            <textarea name="" id="" rows="6"></textarea>
+                        </fieldset>
+                        <span>Please enter the details of your request. The request should be as detailed as possible
+                            and contain all the necessary links. Be sure to indicate the correct email so we can
+                            answer you. If you are registered on the exchange, enter the email associated with
+                            your account. Requests are processed within 7 business days.</span>
+                        <fieldset class="main-form__fieldset">
+                            <button class="main-form__btn btn">Submit</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    @@include('_js.html')
+</body>
+
+</html>
