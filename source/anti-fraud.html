@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        @@include('_header.html', {
+        "nav": true
+        })
+
+
+
+        <main>
+
+            <section class="help">
+                <div class="help__container container">
+                    <aside class="aside">
+                        <div class="aside__title">Articles in this section</div>
+                        <div class="aside__links">
+                            <a href="" class="aside__link active">Account Security Guide</a>
+                            <a href="" class="aside__link">Anti Fraud Guide</a>
+                        </div>
+                    </aside>
+
+                    <div class="help__body">
+                        <h2>Anti-Fraud Guide</h2>
+
+                        <img src="img/07.jpg">
+                        <p>This guide was created to inform users of the Monowork.com exchange about possible types of fraudulent actions.</p>
+                        <h3 class="text-subtitle">1. "Deposit with fiat" </h3>
+                        <p>Monowork.com official does not provide a "Deposit with fiat"service.
+                            We will never require project participants and users to deposit cryptocurrency to any addresses.</p>
+                        <h3 class="text-subtitle">2. Account information</h3>
+                        <p>Monowork.com support will not require anyone for any login information, payment password, Google authentication code, or private key in any name.
+                            Any requests of this nature are fraudulent.</p>
+                        <h3 class="text-subtitle">3. Account/devices access</h3>
+                        <p>Never give access to your account and the funds stored on it to a third-party.
+                            Monowork.com will never request remote access to your account or your devices.</p>
+                        <h3 class="text-subtitle">4. Phishing</h3>
+                        <p>Phishing scammers can copy official e-mails on behalf of the Monowork.com exchange. Scammers may request confidential data via e-mail that compromises your account data, as well as your personal data that helps to identify you. Fraudsters can also attach links to change the phone number and password. Links of this nature may redirect you to a third-party fraudulent website or contain malware. Therefore, never click on links and do not give your data to third-parties.
+                        </p>
+                        <p>Common types of phishing scam:</p>
+                        <ul>
+                            <li><b>Spear</b> Phishing is based on personalized communication in order to gain the user's trust;</li>
+                            <li><b>Clone Phishing</b> - copying a legitimate e-mail containing an attachment or link of a fraudulent version. The e-mail is sent from a masked address;</li>
+                            <li><b>Whaling</b> - targeted at senior executives or senior people within the company. It usually looks like a legitimate concern, subpoena, client issue, or corporate matter;</li>
+                            <li><b>SMiShing</b> - fraud using text or SMS. It looks like a confirmation of account activity.</li>
+                        </ul>
+                        Often, fraudulent e-mails come as spam because they do not pass DKIM/SPF verification.
+                        <p><b>Domain Keys Identified Mail (DKIM)</b> technology allows a company to vouch for an e-mail message that is sent. Technically – this is a method of confirming the sender's domain through a cryptographic signature.
+                        </p>
+                        <p><b>The Sender Policy Framework (SPF)</b> technology is another way to identify the sender of an email and provides an additional option to filter the mail stream for spam messages.
+                        </p>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    @@include('_js.html')
+
+</body>
+
+</html>

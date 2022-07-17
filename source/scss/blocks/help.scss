@@ -38,7 +38,7 @@
         margin: 3px 0 22px;
     }
 
-    ul {
+    ul, ol {
         padding-left: 20px;
         list-style: disc;
         margin-bottom: 15px;
@@ -58,6 +58,29 @@
         & strong, & b  {
             font-weight: 800;
         }
+    }
+    ol {
+        list-style: none;
+        counter-reset: ol-numbers;
+    }
+    ol li {
+        list-style: none;
+        position: relative;
+        padding: 0 0 0 20px;
+    }
+
+    ol li::before {
+        counter-increment: ol-numbers;
+        content: counter(ol-numbers) ".";
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: clamp(14px, 1.391vw, 16.311px);
+            line-height: 125%;
+            color: #000000;
     }
     & a {
         color: #2A46CD;
@@ -99,6 +122,85 @@
     .wysiwyg-color-cyan120 {
         color: #099;
     }
+
+    .small-table {
+        margin: 0 auto;
+        & tr {
+
+        }
+        & td {
+            border: 1.21173px solid #000000;
+
+            & p {
+                margin: 16px 0;
+                text-align: center;
+            }
+        }
+    }
+
+
+    .table-body {
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+
+
+
+        &::-webkit-scrollbar {
+            height: 4px;
+            border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background-color: #d3d3d3;
+            border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #0077f6;
+            border-radius: 4px;
+        }
+    }
+    .big-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0 10px;
+
+        & th {
+            text-align: center;
+            &:first-child {
+                text-align: left;
+            }
+            &:last-child {
+                text-align: end;
+            }
+        }
+        & th,
+        & td {
+            padding: 0 20px;
+            margin: 9px 0;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: clamp(14px, 1.391vw, 16.311px);
+            line-height: 125%;
+            text-align: center;
+            color: #000000;
+        }
+
+        & tr {
+
+        }
+        & td {
+            text-align: center;
+            &:first-child {
+                text-align: left;
+            }
+            &:last-child {
+                text-align: end;
+            }
+
+        }
+    }
 }
 
 
@@ -115,6 +217,7 @@
     @media (max-width: 991px) {
         padding: 0 0 30px 0;
         border-bottom: 1px solid #D9D9D9;
+        margin-bottom: 30px;
     }
     &__title {
         font-family: 'Inter';
