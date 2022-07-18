@@ -6,6 +6,7 @@
     &__body {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         column-gap: 80px;
         padding: 43px 0 0;
         @media (max-width: 991px) {
@@ -24,12 +25,16 @@
         @media (max-width: 991px) {
             display: none;
         }
+
+        & img {
+            max-width: 360px;
+        }
     }
     &__title {
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
-        font-size: clamp(36px, 6.087vw, 70.5246px);
+        font-size: clamp(36px, 5.217vw, 60px);
         line-height: 121%;
 
         color: #FFFFFF;
@@ -39,7 +44,7 @@
         font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
-        font-size: clamp(20px, 2.087vw, 24.9249px);
+        font-size: clamp(20px, 1.913vw, 22px);
         line-height: 125%;
 
         color: #8B97C1;
@@ -48,16 +53,22 @@
         font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
-        font-size: clamp(17px, 1.826vw, 21.341px);
+        font-size: clamp(16px, 1.739vw, 20px);
         line-height: 123%;
         color: #FFFFFF;
         background: #0051F4;
         border-radius: 8.88852px;
         padding: 10px 20px;
         margin-top: 45px;
-
+        transition: all .3s ease;
         @media (max-width: 768px) {
             margin-top: 20px;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                background: #1346CC;
+            }
         }
 
     }
